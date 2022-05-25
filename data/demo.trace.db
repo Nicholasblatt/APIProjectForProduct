@@ -1,0 +1,3 @@
+2022-05-21 21:18:19 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "PRODUCTS" not found (this database is empty); SQL statement:
+insert into products (brand, category, created_at, description, name, tags, id) values (?, ?, ?, ?, ?, ?, ?) [42104-212]

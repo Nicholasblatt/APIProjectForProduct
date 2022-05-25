@@ -1,0 +1,101 @@
+{
+	"info": {
+		"_postman_id": "c9b5fa6e-a0bd-4dff-9e54-6c3d3da6353e",
+		"name": "APIProjectExampleRequests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET request with all parameters filled",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8080/v1/products?page=2&maxEntries=4&category=apparel",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"products"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "2"
+						},
+						{
+							"key": "maxEntries",
+							"value": "4"
+						},
+						{
+							"key": "category",
+							"value": "apparel"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Request with Example",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Red Shirt\", \n    \"description\": \"Red hugo boss shirt\", \n    \"brand\": \"Hugo Boss\",\n    \"tags\": [ \"red\", \"shirt\", \"slim fit\" ], \n    \"category\": \"apparel\"\n} "
+				},
+				"url": {
+					"raw": "localhost:8080/v1/products",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"products"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "2",
+							"disabled": true
+						},
+						{
+							"key": "maxEntries",
+							"value": "4",
+							"disabled": true
+						},
+						{
+							"key": "category",
+							"value": "apparel",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
