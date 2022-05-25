@@ -15,9 +15,7 @@ class ProductController {
         this.repository = repository;
     }
 
-
-    // Aggregate root
-    // tag::get-aggregate-root[]
+    // This is where GET requests are handled. and parameter values are processed
     @GetMapping("/v1/products")
     List<Product> all(
             @RequestParam(defaultValue = "") String category,
@@ -41,8 +39,8 @@ class ProductController {
         products = pagedList(products, firstEntry, lastEntry);
         return products;
     }
-    // end::get-aggregate-root[]
 
+    // This is where POST requests are handled
     @PostMapping("/v1/products")
     Product newProduct(@RequestBody Product newProduct) {
         newProduct.setCreated_at();
@@ -50,7 +48,8 @@ class ProductController {
     }
 
 
-    public static<T> List<T> pagedList(List<T> list, int start, int end)
+    // This helper function gives us a paged sublist where we request
+    private static<T> List<T> pagedList(List<T> list, int start, int end)
     {
         List<T> subList = new ArrayList<>();
 
