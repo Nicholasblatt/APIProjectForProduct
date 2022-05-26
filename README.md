@@ -1,16 +1,16 @@
 # APIProjectForProduct
 
 
-To compile and run this API service, you will need Apache Maven and Apache Tomcat.
+To compile and run this API service, you will need Apache Maven.
+
 Install Apache Maven:
 https://maven.apache.org/install.html
 
-Install Apache Tomcat:
-https://tomcat.apache.org/ download the version of your choosing (Tomcat 8.5 is recommended)
+Once you clone this repository, you will need Apache Maven to build the POM file here.
 
-Once you clone this repository, you will need Apache Maven to build the POM file here. Once you have Maven, you will want to download Tomcat and host a server on the environment of your choosing.
+Please ensure your `pom.xml` has the same `<java-version>xx</java-version` as the java version you are currently running. By default this will be set to 11. Tested with java 8, 11, and 18. 
 
-You will then want to enter the project’s main directory and run a `mvn clean install` followed by `chmod +x mvnw` to make the maven running file executable. Then you will want to run `./mvnw clean spring-boot:run` to run the project. Once this project is running you will have an API service running at `localhost:8080` (if Tomcat is running on the default port).
+You will then want to enter the project’s main directory and run a `mvn clean install` followed by `chmod +x mvnw` to make the maven running file executable. Then you will want to run `./mvnw clean spring-boot:run` to run the project(this will run on a server with Apache Tomcat). Once this project is running you will have an API service running at `localhost:8080` (if Tomcat is running on the default port).
 
 The endpoints we have available are:
 GET /v1/products
