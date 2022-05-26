@@ -65,6 +65,9 @@ If you would like to examine your in memory H2 database while the project is run
 
 http://localhost:8080/h2-console
 
-The username is centric
-And the password is empty
+Driver Class: org.h2.Driver\
+JDBC URL: jdbc:h2:mem:testdb\
+User Name: centric\
+Password:\
+(The password field should remain empty)
 
