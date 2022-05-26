@@ -13,8 +13,8 @@ Please ensure your `pom.xml` has the same `<java-version>xx</java-version` as th
 You will then want to enter the project’s main directory and run a `mvn clean install` followed by `chmod +x mvnw` to make the maven running file executable. Then you will want to run `./mvnw clean spring-boot:run` to run the project(this will run on a server with Apache Tomcat). Once this project is running you will have an API service running at `localhost:8080` (if Tomcat is running on the default port).
 
 The endpoints we have available are:
-GET /v1/products
-POST /v1/products
+- GET /v1/products
+- POST /v1/products
 
 Your Content-Type must be application/json or you won’t be able to perform a POST.
 
