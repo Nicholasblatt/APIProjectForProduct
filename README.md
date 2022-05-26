@@ -58,9 +58,13 @@ I have included a folder in the project called `PostmanRequests`. If you would l
 https://www.postman.com/downloads/
 
 
+Additionally, inside of the src folder, there is a unit test for the ProductController.
+
+
 If you would like to examine your in memory H2 database while the project is running on localhost, you may do so by accessing the following link:
 
 http://localhost:8080/h2-console
 
 The username is centric
 And the password is empty
+
